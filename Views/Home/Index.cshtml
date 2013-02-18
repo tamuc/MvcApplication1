@@ -1,9 +1,13 @@
-﻿@model MvcApplication1.Models.Person
+﻿@model MvcApplication1.Models.Robot
 
 <div>
-    Hey: @Model.Name
+    Hey: @Model.Designation
 </div>
 
 <div>
-    @Model.DateOfBirth
+    @Model.ManufactureDate
+</div>
+
+<div>
+    @if (Model.KillMode == true) {  };
 </div>
